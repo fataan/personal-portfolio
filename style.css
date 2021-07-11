@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+header {
+    width: 100%;
+    background-color: #3535ff;
+    text-align: center; 
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    /* margin: 0 auto; */
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;  
+}
+
+.welcome {
+    height: 100vh;
+    background-color: rgba(255, 44, 44, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome > h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.welcome > p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.projects {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 100px;
+    color: white;
+    margin-bottom: 100px ;
+}
+
+.projects > h2,
+#contact > h2  {
+    font-size: 2.5em;
+    font-weight:800 ;
+    margin-bottom: 20px;
+}
+
+a > p {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.project {
+    width: 600px;
+    height: 500px;
+    background-color: salmon;
+    margin: 40px;
+}
+
+.img-1 {
+    background-image: url(img/Form.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url(img/HexColor.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3 {
+    background-image: url(img/Landing\ Page.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#contact {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.size {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.contact-links {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+    .projects > h2, #contact > h2 {
+        font-size: 2em;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+}
